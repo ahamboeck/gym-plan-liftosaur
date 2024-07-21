@@ -1,0 +1,179 @@
+# Week 1
+## Tuesday
+/// Templates
+/// Compound
+t: Squat[1-6] / used: none / 3x3 / 180s / warmup: 1x10 20%, 1x5 40%, 1x3 60%
+t: Deadlift[1-6] / used: none / 3x6 / 120s / warmup: 1x10 20%, 1x5 40%
+/// Upper Legs
+t: Hip Thrust[1-6] / used: none / 2x12 / 120s / warmup: none
+t: Leg Press[1-6] / used: none / 2x16 / 90s / warmup: none
+t: Lying Leg Curl[1-6] / used: none / 2x12 / 90s / warmup: none
+/// Lower Legs
+t: Calf Raise Single Leg, Dumbbell[1-6] / used: none / 3x10 / 30s / warmup: none
+t: Tibialis Raise, Bodyweight[1-6] / used: none / 3x15+ / 90s / warmup: none
+/// Recovery
+t: Face Pull, Cable[1-6] / used: none / 3x10+ / 90s / warmup: none
+t: Weighted Leg Pull Lying For Hip Flexor[1-6] / used: none / 3x12+ / 4kg / 30s / warmup: none
+/// Chest
+t: Bench Press, Barbell[1-6] / used: none / 3x4 / 180s / warmup: 1x10 20%, 1x5 40%, 1x3 60%
+t: Incline Bench Press, Dumbbell[1-6] / used: none / 3x8 / 90s / warmup: 1x10 20%, 1x5 40%
+/// Back
+t: Seated Row, Leverage Machine[1-6] / used: none / 3x8 / 90s / warmup: 1x10 20%, 1x5 40%
+t: Seated Row, Cable[1-6] / used: none / 3x8 / 90s / warmup: 1x10 20%, 1x5 40%
+t: Pull Up, Bodyweight[1-6] / used: none / 3x8 / 90s / warmup: none
+t: Chin Up, Bodyweight[1-6] / used: none / 3x8 / 90s / warmup: none
+/// Shoulder
+t: Push Press, Barbell[1-6] / used: none / 3x4 / 120s / warmup: 1x10 20%, 1x5 40%
+t: Shoulder Press, Dumbbell[1-6] / used: none / 3x8 / 90s / warmup: 1x10 20%, 1x5 40%
+t: Lateral Raise, Dumbbell[1-6] / used: none / 3x10 / 90s / warmup: none
+/// Abs
+t: Cable Crunch, Cable[1-6] / used: none / 3x14 / 90s / warmup: none
+t: Hanging Leg Raise, Dumbbell[1-6] / used: none / 3x8 / 120s / warmup: none
+/// Arms
+t: Bicep Curl, Cable[1-6] / used: none / 3x12 / 90s / warmup: none
+t: Triceps Extension One Arm, Cable[1-6] / used: none / 3x12 / 90s / warmup: none
+
+/// Actual exercises
+// Pause **1 second** at the bottom
+lowrep: Squat[1,1-6] / ...t: Squat, Barbell / progress: dp(5kg, 3, 6)
+// Control the lowering phase around **2 seconds**
+highrep: Deadlift[2,1-6] / ...t: Deadlift, Barbell / progress: dp(2.5kg, 6, 10)
+// Control the lowering phase around **2 seconds**
+Hip Thrust[3,1-6] / ...t: Hip Thrust, Barbell / progress: dp(2.5kg, 8, 12)
+// Control the lowering phase around **2 seconds** and don't lock out the knees
+Leg Press[4,1-6] / ...t: Leg Press / progress: dp(2.5kg, 12, 16)
+// Control the lowering phase around **2 seconds**
+Calf Raise Single Leg, Dumbbell[5,1-6] / ...t: Calf Raise Single Leg, Dumbbell / progress: dp(2kg, 10, 14)
+// Control the lowering phase around **2 seconds**
+Tibialis Raise, Bodyweight[6,1-6] / ...t: Tibialis Raise, Bodyweight
+// To get the groin pain away, perform it **slowly**
+Weighted Leg Pull Lying For Hip Flexor[7,1-6] / ...t: Weighted Leg Pull Lying For Hip Flexor
+// Control the lowering phase around **2 seconds**
+Hanging Leg Raise, Dumbbell[8,1-6] / ...t: Hanging Leg Raise, Dumbbell / progress: dp(2kg, 8, 12)
+
+## Thursday
+lowrep: Bench Press, Barbell[1,1-6] / ...t: Bench Press, Barbell / progress: dp(2.5kg, 4, 8) 
+Pull Up, Bodyweight[2,1-6] / ...t: Pull Up, Bodyweight
+Shoulder Press, Dumbbell[3,1-6] / ...t: Shoulder Press, Dumbbell / progress: dp(2kg, 8, 12)
+Seated Row, Cable[4,1-6] / ...t: Seated Row, Cable / progress: dp(2kg, 8, 12)
+Incline Bench Press, Dumbbell[5,1-6] / ...t: Incline Bench Press, Dumbbell / progress: dp(2kg, 8, 12)
+Lateral Raise, Dumbbell[6,1-6] / ...t: Lateral Raise, Dumbbell / progress: dp(2kg, 10, 14)
+Cable Crunch, Cable[7,1-6] / ...t: Cable Crunch, Cable / progress: dp(2kg, 14, 18)
+Bicep Curl, Cable[8, 1-6] / ...t: Bicep Curl, Cable / progress: dp(2kg, 12, 16)
+Triceps Extension One Arm, Cable[1-6] / ...t: Triceps Extension One Arm, Cable / progress:  dp(2kg, 12, 16)
+
+## Friday
+// Control the lowering phase around **2 seconds**
+lowrep: Deadlift[1,1-6] / ...t: Squat, Barbell / progress: dp(5kg, 3, 6)
+// Pause **1 second** at the bottom
+highrep: Squat[2,1-4] / ...t: Deadlift, Barbell / progress: dp(2.5kg, 6, 10)
+// Control the lowering phase around **2 seconds**
+Hip Thrust[3,1-6] / ...t: Hip Thrust, Barbell
+// Control the lowering phase around **2 seconds**
+Lying Leg Curl[4,1-6] / ...t: Lying Leg Curl, Leverage Machine / progress: dp(2.5kg, 12, 16)
+// Control the lowering phase around **2 seconds**
+Calf Raise Single Leg, Dumbbell[5,1-6] / ...t: Calf Raise Single Leg, Dumbbell
+// Control the lowering phase around **2 seconds**
+Tibialis Raise, Bodyweight[6,1-6] / ...t: Tibialis Raise, Bodyweight
+// To get the groin pain away, perform it **slowly**
+Weighted Leg Pull Lying For Hip Flexor[7,1-6] / ...t: Weighted Leg Pull Lying For Hip Flexor
+// Control the lowering phase around **2 seconds**
+Hanging Leg Raise, Dumbbell[8,1-6] / ...t: Hanging Leg Raise, Dumbbell
+
+## Sunday
+highrep: Bench Press, Barbell[1,1-6] / ...t: Incline Bench Press, Dumbbell / progress: dp(2.5kg, 8, 12) 
+Chin Up, Bodyweight[2,1-6] / ...t: Chin Up, Bodyweight
+Push Press, Barbell[3,1-6] / ...t: Push Press, Barbell / progress: dp(2kg, 4, 8)
+Seated Row, Leverage Machine[4,1-6] / ...t: Seated Row, Cable / progress: dp(2kg, 8, 12)
+Incline Bench Press, Dumbbell[5,1-6] / ...t: Incline Bench Press, Dumbbell / progress: dp(2kg, 8, 12)
+Lateral Raise, Dumbbell[6,1-6] / ...t: Lateral Raise, Dumbbell / progress: dp(2kg, 10, 14)
+Cable Crunch, Cable[7,1-6] / ...t: Cable Crunch, Cable / progress: dp(2kg, 14, 18)
+Bicep Curl, Cable[8, 1-6] / ...t: Bicep Curl, Cable / progress: dp(2kg, 12, 16)
+Triceps Extension One Arm, Cable[1-6] / ...t: Triceps Extension One Arm, Cable / progress:  dp(2kg, 12, 16)
+
+
+# Week 2
+## Tuesday
+
+
+## Thursday
+
+
+## Friday
+
+
+## Sunday
+
+
+
+# Week 3
+## Tuesday
+
+
+## Thursday
+
+
+## Friday
+
+
+## Sunday
+
+
+
+# Week 4
+## Tuesday
+
+
+## Thursday
+
+
+## Friday
+
+
+## Sunday
+
+
+
+# Week 5
+## Tuesday
+
+
+## Thursday
+
+
+## Friday
+
+
+## Sunday
+
+
+
+# Week 6
+## Tuesday
+
+
+## Thursday
+
+
+## Friday
+
+
+## Sunday
+
+
+
+# Week 7 ( Deload)
+## Tuesday
+
+
+## Thursday
+
+
+## Friday
+
+
+## Sunday
+
+
+
+
